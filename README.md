@@ -20,3 +20,5 @@ npm run dev
 ```
 
 Open http://localhost:3000 with your browser to see the result.
+
+Or visit the vercel link: https://expense-tracker-beige-delta.vercel.app/ to view the deployed version
