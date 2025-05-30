@@ -17,7 +17,7 @@ export default function ExpensesTable({ data, onEdit, onDelete }) {
           {data.length === 0 ? (
             <tr>
               <td colSpan="5" className="p-4 text-center text-gray-500">
-                No matching records found.
+                No records found.
               </td>
             </tr>
           ) : (

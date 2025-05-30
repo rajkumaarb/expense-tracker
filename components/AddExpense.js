@@ -11,7 +11,6 @@ export default function AddExpense({ isOpen, onClose, onSubmit, editItem }) {
 
   const [errors, setErrors] = useState({});
 
-  // Prefill form when editing
   useEffect(() => {
     setForm({
       date: editItem?.date || "",
@@ -23,13 +22,11 @@ export default function AddExpense({ isOpen, onClose, onSubmit, editItem }) {
     setErrors({});
   }, [editItem, isOpen]);
 
-  // Input change handler
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Simple form validation
   const validateForm = () => {
     const newErrors = {};
     if (!form.date) newErrors.date = "Date is required";
